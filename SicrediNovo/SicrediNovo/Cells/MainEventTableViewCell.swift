@@ -7,33 +7,29 @@
 //
 
 import UIKit
-import AlamofireImage
+
 class MainEventTableViewCell: UITableViewCell {
-    @IBOutlet weak var eventThumbnail: UIImageView!
-    @IBOutlet weak var eventNameLabel: UILabel!
+    @IBOutlet private weak var eventThumbnail: UIImageView!
+    @IBOutlet private weak var eventNameLabel: UILabel!
     
-    static let xibName = "MainEventCell"
-    
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    static public let xibName = "MainEventCell"
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
     func setup(event : Event){
         eventNameLabel.text = event.title
-        
-        guard let imageUrl =  URL(string:event.image) else {
-                  eventThumbnail.image = AssetsImage.noDataImage
-                  return}
-        eventThumbnail.af_setImage(withURL: imageUrl, placeholderImage: AssetsImage.noDataImage)
-       
+        DispatchQueue.global().async {
+            guard let url = URL(string: event.image), let data = try? Data(contentsOf: url) else {
+                return
+            }
+            DispatchQueue.main.async { [weak self] in
+                self?.eventThumbnail.image = UIImage(data: data)
+            }
+        }
     }
 
+}
+
+extension UITableViewCell{
+    static func reuseIdentifier()-> String {
+        return  String(describing: type(of: self))
+    }
 }

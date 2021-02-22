@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		9AC1C6D725E3D737007A47C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C6D625E3D737007A47C2 /* AppDelegate.swift */; };
 		9AC1C6D925E3D737007A47C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C6D825E3D737007A47C2 /* SceneDelegate.swift */; };
-		9AC1C6DB25E3D737007A47C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C6DA25E3D737007A47C2 /* ViewController.swift */; };
-		9AC1C6DE25E3D737007A47C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AC1C6DC25E3D737007A47C2 /* Main.storyboard */; };
 		9AC1C6E025E3D738007A47C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AC1C6DF25E3D738007A47C2 /* Assets.xcassets */; };
 		9AC1C6E325E3D738007A47C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AC1C6E125E3D738007A47C2 /* LaunchScreen.storyboard */; };
 		9AC1C6EE25E3D738007A47C2 /* SicrediNovoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C6ED25E3D738007A47C2 /* SicrediNovoTests.swift */; };
 		9AC1C6F925E3D738007A47C2 /* SicrediNovoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C6F825E3D738007A47C2 /* SicrediNovoUITests.swift */; };
+		9AC1C70E25E3D807007A47C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AC1C70C25E3D807007A47C2 /* Main.storyboard */; };
+		9AC1C71725E3D87D007A47C2 /* InitialScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C71625E3D87D007A47C2 /* InitialScreenViewController.swift */; };
+		9AC1C71C25E3D9F5007A47C2 /* InitialScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C71B25E3D9F5007A47C2 /* InitialScreenViewModel.swift */; };
+		9AC1C72225E3DAD3007A47C2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C72125E3DAD3007A47C2 /* Event.swift */; };
+		9AC1C73025E3DF16007A47C2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C72F25E3DF16007A47C2 /* Network.swift */; };
+		9AC1C73525E3E01D007A47C2 /* EventsNetworkRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C73425E3E01D007A47C2 /* EventsNetworkRequests.swift */; };
+		9AC1C73B25E3E639007A47C2 /* APConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C73A25E3E639007A47C2 /* APConstants.swift */; };
+		9AC1C74B25E3EC1C007A47C2 /* MainEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C74325E3EC1B007A47C2 /* MainEventTableViewCell.swift */; };
+		9AC1C74F25E3EC1C007A47C2 /* MainEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AC1C74725E3EC1C007A47C2 /* MainEventCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +45,6 @@
 		9AC1C6D325E3D737007A47C2 /* SicrediNovo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SicrediNovo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AC1C6D625E3D737007A47C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AC1C6D825E3D737007A47C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9AC1C6DA25E3D737007A47C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9AC1C6DD25E3D737007A47C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AC1C6DF25E3D738007A47C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AC1C6E225E3D738007A47C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AC1C6E425E3D738007A47C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +54,15 @@
 		9AC1C6F425E3D738007A47C2 /* SicrediNovoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SicrediNovoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AC1C6F825E3D738007A47C2 /* SicrediNovoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicrediNovoUITests.swift; sourceTree = "<group>"; };
 		9AC1C6FA25E3D738007A47C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AC1C70D25E3D807007A47C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9AC1C71625E3D87D007A47C2 /* InitialScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenViewController.swift; sourceTree = "<group>"; };
+		9AC1C71B25E3D9F5007A47C2 /* InitialScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenViewModel.swift; sourceTree = "<group>"; };
+		9AC1C72125E3DAD3007A47C2 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		9AC1C72F25E3DF16007A47C2 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		9AC1C73425E3E01D007A47C2 /* EventsNetworkRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsNetworkRequests.swift; sourceTree = "<group>"; };
+		9AC1C73A25E3E639007A47C2 /* APConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APConstants.swift; sourceTree = "<group>"; };
+		9AC1C74325E3EC1B007A47C2 /* MainEventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainEventTableViewCell.swift; sourceTree = "<group>"; };
+		9AC1C74725E3EC1C007A47C2 /* MainEventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainEventCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +113,13 @@
 		9AC1C6D525E3D737007A47C2 /* SicrediNovo */ = {
 			isa = PBXGroup;
 			children = (
+				9AC1C72E25E3DEF5007A47C2 /* Network */,
+				9AC1C72025E3DAB2007A47C2 /* Model */,
+				9AC1C71525E3D860007A47C2 /* InitialScreen */,
+				9AC1C74225E3EC1B007A47C2 /* Cells */,
+				9AC1C70C25E3D807007A47C2 /* Main.storyboard */,
 				9AC1C6D625E3D737007A47C2 /* AppDelegate.swift */,
 				9AC1C6D825E3D737007A47C2 /* SceneDelegate.swift */,
-				9AC1C6DA25E3D737007A47C2 /* ViewController.swift */,
-				9AC1C6DC25E3D737007A47C2 /* Main.storyboard */,
 				9AC1C6DF25E3D738007A47C2 /* Assets.xcassets */,
 				9AC1C6E125E3D738007A47C2 /* LaunchScreen.storyboard */,
 				9AC1C6E425E3D738007A47C2 /* Info.plist */,
@@ -126,6 +143,42 @@
 				9AC1C6FA25E3D738007A47C2 /* Info.plist */,
 			);
 			path = SicrediNovoUITests;
+			sourceTree = "<group>";
+		};
+		9AC1C71525E3D860007A47C2 /* InitialScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9AC1C71625E3D87D007A47C2 /* InitialScreenViewController.swift */,
+				9AC1C71B25E3D9F5007A47C2 /* InitialScreenViewModel.swift */,
+			);
+			path = InitialScreen;
+			sourceTree = "<group>";
+		};
+		9AC1C72025E3DAB2007A47C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9AC1C72125E3DAD3007A47C2 /* Event.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9AC1C72E25E3DEF5007A47C2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9AC1C72F25E3DF16007A47C2 /* Network.swift */,
+				9AC1C73425E3E01D007A47C2 /* EventsNetworkRequests.swift */,
+				9AC1C73A25E3E639007A47C2 /* APConstants.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9AC1C74225E3EC1B007A47C2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9AC1C74325E3EC1B007A47C2 /* MainEventTableViewCell.swift */,
+				9AC1C74725E3EC1C007A47C2 /* MainEventCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +284,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AC1C70E25E3D807007A47C2 /* Main.storyboard in Resources */,
 				9AC1C6E325E3D738007A47C2 /* LaunchScreen.storyboard in Resources */,
+				9AC1C74F25E3EC1C007A47C2 /* MainEventCell.xib in Resources */,
 				9AC1C6E025E3D738007A47C2 /* Assets.xcassets in Resources */,
-				9AC1C6DE25E3D737007A47C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +312,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AC1C6DB25E3D737007A47C2 /* ViewController.swift in Sources */,
 				9AC1C6D725E3D737007A47C2 /* AppDelegate.swift in Sources */,
+				9AC1C71C25E3D9F5007A47C2 /* InitialScreenViewModel.swift in Sources */,
+				9AC1C73B25E3E639007A47C2 /* APConstants.swift in Sources */,
+				9AC1C74B25E3EC1C007A47C2 /* MainEventTableViewCell.swift in Sources */,
+				9AC1C73025E3DF16007A47C2 /* Network.swift in Sources */,
+				9AC1C71725E3D87D007A47C2 /* InitialScreenViewController.swift in Sources */,
 				9AC1C6D925E3D737007A47C2 /* SceneDelegate.swift in Sources */,
+				9AC1C72225E3DAD3007A47C2 /* Event.swift in Sources */,
+				9AC1C73525E3E01D007A47C2 /* EventsNetworkRequests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,20 +356,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9AC1C6DC25E3D737007A47C2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9AC1C6DD25E3D737007A47C2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9AC1C6E125E3D738007A47C2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9AC1C6E225E3D738007A47C2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9AC1C70C25E3D807007A47C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AC1C70D25E3D807007A47C2 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
