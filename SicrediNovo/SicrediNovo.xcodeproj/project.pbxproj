@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AC1C6D725E3D737007A47C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C6D625E3D737007A47C2 /* AppDelegate.swift */; };
+		9AC1C6D925E3D737007A47C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C6D825E3D737007A47C2 /* SceneDelegate.swift */; };
+		9AC1C6E025E3D738007A47C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AC1C6DF25E3D738007A47C2 /* Assets.xcassets */; };
+		9AC1C6E325E3D738007A47C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AC1C6E125E3D738007A47C2 /* LaunchScreen.storyboard */; };
+		9AC1C6F925E3D738007A47C2 /* SicrediNovoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C6F825E3D738007A47C2 /* SicrediNovoUITests.swift */; };
+		9AC1C70E25E3D807007A47C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AC1C70C25E3D807007A47C2 /* Main.storyboard */; };
+		9AC1C71725E3D87D007A47C2 /* InitialScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C71625E3D87D007A47C2 /* InitialScreenViewController.swift */; };
+		9AC1C71C25E3D9F5007A47C2 /* InitialScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C71B25E3D9F5007A47C2 /* InitialScreenViewModel.swift */; };
+		9AC1C72225E3DAD3007A47C2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C72125E3DAD3007A47C2 /* Event.swift */; };
+		9AC1C73025E3DF16007A47C2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C72F25E3DF16007A47C2 /* Network.swift */; };
+		9AC1C73525E3E01D007A47C2 /* EventsNetworkRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C73425E3E01D007A47C2 /* EventsNetworkRequests.swift */; };
+		9AC1C73B25E3E639007A47C2 /* APConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C73A25E3E639007A47C2 /* APConstants.swift */; };
+		9AC1C74B25E3EC1C007A47C2 /* MainEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C74325E3EC1B007A47C2 /* MainEventTableViewCell.swift */; };
+		9AC1C74F25E3EC1C007A47C2 /* MainEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AC1C74725E3EC1C007A47C2 /* MainEventCell.xib */; };
+		9AC1C76025E40007007A47C2 /* InitialViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C75F25E40007007A47C2 /* InitialViewControllerTests.swift */; };
+		9AC1C76625E4008D007A47C2 /* InitialScreenViewModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C76525E4008D007A47C2 /* InitialScreenViewModelStub.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AC1C6EA25E3D738007A47C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AC1C6CB25E3D737007A47C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AC1C6D225E3D737007A47C2;
+			remoteInfo = SicrediNovo;
+		};
+		9AC1C6F525E3D738007A47C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AC1C6CB25E3D737007A47C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AC1C6D225E3D737007A47C2;
+			remoteInfo = SicrediNovo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9AC1C6D325E3D737007A47C2 /* SicrediNovo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SicrediNovo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC1C6D625E3D737007A47C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9AC1C6D825E3D737007A47C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9AC1C6DF25E3D738007A47C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AC1C6E225E3D738007A47C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9AC1C6E425E3D738007A47C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AC1C6E925E3D738007A47C2 /* SicrediNovoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SicrediNovoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC1C6EF25E3D738007A47C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AC1C6F425E3D738007A47C2 /* SicrediNovoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SicrediNovoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC1C6F825E3D738007A47C2 /* SicrediNovoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicrediNovoUITests.swift; sourceTree = "<group>"; };
+		9AC1C6FA25E3D738007A47C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AC1C70D25E3D807007A47C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9AC1C71625E3D87D007A47C2 /* InitialScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenViewController.swift; sourceTree = "<group>"; };
+		9AC1C71B25E3D9F5007A47C2 /* InitialScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenViewModel.swift; sourceTree = "<group>"; };
+		9AC1C72125E3DAD3007A47C2 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		9AC1C72F25E3DF16007A47C2 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		9AC1C73425E3E01D007A47C2 /* EventsNetworkRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsNetworkRequests.swift; sourceTree = "<group>"; };
+		9AC1C73A25E3E639007A47C2 /* APConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APConstants.swift; sourceTree = "<group>"; };
+		9AC1C74325E3EC1B007A47C2 /* MainEventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainEventTableViewCell.swift; sourceTree = "<group>"; };
+		9AC1C74725E3EC1C007A47C2 /* MainEventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainEventCell.xib; sourceTree = "<group>"; };
+		9AC1C75F25E40007007A47C2 /* InitialViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewControllerTests.swift; sourceTree = "<group>"; };
+		9AC1C76525E4008D007A47C2 /* InitialScreenViewModelStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenViewModelStub.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AC1C6D025E3D737007A47C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC1C6E625E3D738007A47C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC1C6F125E3D738007A47C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AC1C6CA25E3D737007A47C2 = {
+			isa = PBXGroup;
+			children = (
+				9AC1C6D525E3D737007A47C2 /* SicrediNovo */,
+				9AC1C6EC25E3D738007A47C2 /* SicrediNovoTests */,
+				9AC1C6F725E3D738007A47C2 /* SicrediNovoUITests */,
+				9AC1C6D425E3D737007A47C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9AC1C6D425E3D737007A47C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AC1C6D325E3D737007A47C2 /* SicrediNovo.app */,
+				9AC1C6E925E3D738007A47C2 /* SicrediNovoTests.xctest */,
+				9AC1C6F425E3D738007A47C2 /* SicrediNovoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AC1C6D525E3D737007A47C2 /* SicrediNovo */ = {
+			isa = PBXGroup;
+			children = (
+				9AC1C72E25E3DEF5007A47C2 /* Network */,
+				9AC1C72025E3DAB2007A47C2 /* Model */,
+				9AC1C71525E3D860007A47C2 /* InitialScreen */,
+				9AC1C74225E3EC1B007A47C2 /* Cells */,
+				9AC1C70C25E3D807007A47C2 /* Main.storyboard */,
+				9AC1C6D625E3D737007A47C2 /* AppDelegate.swift */,
+				9AC1C6D825E3D737007A47C2 /* SceneDelegate.swift */,
+				9AC1C6DF25E3D738007A47C2 /* Assets.xcassets */,
+				9AC1C6E125E3D738007A47C2 /* LaunchScreen.storyboard */,
+				9AC1C6E425E3D738007A47C2 /* Info.plist */,
+			);
+			path = SicrediNovo;
+			sourceTree = "<group>";
+		};
+		9AC1C6EC25E3D738007A47C2 /* SicrediNovoTests */ = {
+			isa = PBXGroup;
+			children = (
+				9AC1C76425E40075007A47C2 /* Stubs */,
+				9AC1C75F25E40007007A47C2 /* InitialViewControllerTests.swift */,
+				9AC1C6EF25E3D738007A47C2 /* Info.plist */,
+			);
+			path = SicrediNovoTests;
+			sourceTree = "<group>";
+		};
+		9AC1C6F725E3D738007A47C2 /* SicrediNovoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9AC1C6F825E3D738007A47C2 /* SicrediNovoUITests.swift */,
+				9AC1C6FA25E3D738007A47C2 /* Info.plist */,
+			);
+			path = SicrediNovoUITests;
+			sourceTree = "<group>";
+		};
+		9AC1C71525E3D860007A47C2 /* InitialScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9AC1C71625E3D87D007A47C2 /* InitialScreenViewController.swift */,
+				9AC1C71B25E3D9F5007A47C2 /* InitialScreenViewModel.swift */,
+			);
+			path = InitialScreen;
+			sourceTree = "<group>";
+		};
+		9AC1C72025E3DAB2007A47C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9AC1C72125E3DAD3007A47C2 /* Event.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9AC1C72E25E3DEF5007A47C2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9AC1C72F25E3DF16007A47C2 /* Network.swift */,
+				9AC1C73425E3E01D007A47C2 /* EventsNetworkRequests.swift */,
+				9AC1C73A25E3E639007A47C2 /* APConstants.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9AC1C74225E3EC1B007A47C2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9AC1C74325E3EC1B007A47C2 /* MainEventTableViewCell.swift */,
+				9AC1C74725E3EC1C007A47C2 /* MainEventCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9AC1C76425E40075007A47C2 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				9AC1C76525E4008D007A47C2 /* InitialScreenViewModelStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AC1C6D225E3D737007A47C2 /* SicrediNovo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AC1C6FD25E3D738007A47C2 /* Build configuration list for PBXNativeTarget "SicrediNovo" */;
+			buildPhases = (
+				9AC1C6CF25E3D737007A47C2 /* Sources */,
+				9AC1C6D025E3D737007A47C2 /* Frameworks */,
+				9AC1C6D125E3D737007A47C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SicrediNovo;
+			productName = SicrediNovo;
+			productReference = 9AC1C6D325E3D737007A47C2 /* SicrediNovo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9AC1C6E825E3D738007A47C2 /* SicrediNovoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AC1C70025E3D738007A47C2 /* Build configuration list for PBXNativeTarget "SicrediNovoTests" */;
+			buildPhases = (
+				9AC1C6E525E3D738007A47C2 /* Sources */,
+				9AC1C6E625E3D738007A47C2 /* Frameworks */,
+				9AC1C6E725E3D738007A47C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AC1C6EB25E3D738007A47C2 /* PBXTargetDependency */,
+			);
+			name = SicrediNovoTests;
+			productName = SicrediNovoTests;
+			productReference = 9AC1C6E925E3D738007A47C2 /* SicrediNovoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9AC1C6F325E3D738007A47C2 /* SicrediNovoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AC1C70325E3D738007A47C2 /* Build configuration list for PBXNativeTarget "SicrediNovoUITests" */;
+			buildPhases = (
+				9AC1C6F025E3D738007A47C2 /* Sources */,
+				9AC1C6F125E3D738007A47C2 /* Frameworks */,
+				9AC1C6F225E3D738007A47C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AC1C6F625E3D738007A47C2 /* PBXTargetDependency */,
+			);
+			name = SicrediNovoUITests;
+			productName = SicrediNovoUITests;
+			productReference = 9AC1C6F425E3D738007A47C2 /* SicrediNovoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AC1C6CB25E3D737007A47C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					9AC1C6D225E3D737007A47C2 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					9AC1C6E825E3D738007A47C2 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 9AC1C6D225E3D737007A47C2;
+					};
+					9AC1C6F325E3D738007A47C2 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 9AC1C6D225E3D737007A47C2;
+					};
+				};
+			};
+			buildConfigurationList = 9AC1C6CE25E3D737007A47C2 /* Build configuration list for PBXProject "SicrediNovo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AC1C6CA25E3D737007A47C2;
+			productRefGroup = 9AC1C6D425E3D737007A47C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AC1C6D225E3D737007A47C2 /* SicrediNovo */,
+				9AC1C6E825E3D738007A47C2 /* SicrediNovoTests */,
+				9AC1C6F325E3D738007A47C2 /* SicrediNovoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AC1C6D125E3D737007A47C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC1C70E25E3D807007A47C2 /* Main.storyboard in Resources */,
+				9AC1C6E325E3D738007A47C2 /* LaunchScreen.storyboard in Resources */,
+				9AC1C74F25E3EC1C007A47C2 /* MainEventCell.xib in Resources */,
+				9AC1C6E025E3D738007A47C2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC1C6E725E3D738007A47C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC1C6F225E3D738007A47C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AC1C6CF25E3D737007A47C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC1C6D725E3D737007A47C2 /* AppDelegate.swift in Sources */,
+				9AC1C71C25E3D9F5007A47C2 /* InitialScreenViewModel.swift in Sources */,
+				9AC1C73B25E3E639007A47C2 /* APConstants.swift in Sources */,
+				9AC1C74B25E3EC1C007A47C2 /* MainEventTableViewCell.swift in Sources */,
+				9AC1C73025E3DF16007A47C2 /* Network.swift in Sources */,
+				9AC1C71725E3D87D007A47C2 /* InitialScreenViewController.swift in Sources */,
+				9AC1C6D925E3D737007A47C2 /* SceneDelegate.swift in Sources */,
+				9AC1C72225E3DAD3007A47C2 /* Event.swift in Sources */,
+				9AC1C73525E3E01D007A47C2 /* EventsNetworkRequests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC1C6E525E3D738007A47C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC1C76625E4008D007A47C2 /* InitialScreenViewModelStub.swift in Sources */,
+				9AC1C76025E40007007A47C2 /* InitialViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC1C6F025E3D738007A47C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC1C6F925E3D738007A47C2 /* SicrediNovoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AC1C6EB25E3D738007A47C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AC1C6D225E3D737007A47C2 /* SicrediNovo */;
+			targetProxy = 9AC1C6EA25E3D738007A47C2 /* PBXContainerItemProxy */;
+		};
+		9AC1C6F625E3D738007A47C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AC1C6D225E3D737007A47C2 /* SicrediNovo */;
+			targetProxy = 9AC1C6F525E3D738007A47C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9AC1C6E125E3D738007A47C2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AC1C6E225E3D738007A47C2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9AC1C70C25E3D807007A47C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AC1C70D25E3D807007A47C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AC1C6FB25E3D738007A47C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9AC1C6FC25E3D738007A47C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AC1C6FE25E3D738007A47C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 536GDVGJ68;
+				INFOPLIST_FILE = SicrediNovo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BrunoDorneles.SicrediNovo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AC1C6FF25E3D738007A47C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 536GDVGJ68;
+				INFOPLIST_FILE = SicrediNovo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BrunoDorneles.SicrediNovo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9AC1C70125E3D738007A47C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 536GDVGJ68;
+				INFOPLIST_FILE = SicrediNovoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BrunoDorneles.SicrediNovoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SicrediNovo.app/SicrediNovo";
+			};
+			name = Debug;
+		};
+		9AC1C70225E3D738007A47C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 536GDVGJ68;
+				INFOPLIST_FILE = SicrediNovoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BrunoDorneles.SicrediNovoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SicrediNovo.app/SicrediNovo";
+			};
+			name = Release;
+		};
+		9AC1C70425E3D738007A47C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 536GDVGJ68;
+				INFOPLIST_FILE = SicrediNovoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BrunoDorneles.SicrediNovoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SicrediNovo;
+			};
+			name = Debug;
+		};
+		9AC1C70525E3D738007A47C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 536GDVGJ68;
+				INFOPLIST_FILE = SicrediNovoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BrunoDorneles.SicrediNovoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SicrediNovo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AC1C6CE25E3D737007A47C2 /* Build configuration list for PBXProject "SicrediNovo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AC1C6FB25E3D738007A47C2 /* Debug */,
+				9AC1C6FC25E3D738007A47C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AC1C6FD25E3D738007A47C2 /* Build configuration list for PBXNativeTarget "SicrediNovo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AC1C6FE25E3D738007A47C2 /* Debug */,
+				9AC1C6FF25E3D738007A47C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AC1C70025E3D738007A47C2 /* Build configuration list for PBXNativeTarget "SicrediNovoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AC1C70125E3D738007A47C2 /* Debug */,
+				9AC1C70225E3D738007A47C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AC1C70325E3D738007A47C2 /* Build configuration list for PBXNativeTarget "SicrediNovoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AC1C70425E3D738007A47C2 /* Debug */,
+				9AC1C70525E3D738007A47C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AC1C6CB25E3D737007A47C2 /* Project object */;
+}
