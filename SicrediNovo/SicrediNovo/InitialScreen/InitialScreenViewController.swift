@@ -35,6 +35,10 @@ class InitialScreenViewController: UIViewController {
 }
 
 extension InitialScreenViewController: InitialScreenViewModelDelegate {
+    func pushViewController(vc: UIViewController) {
+        navigationController?.pushViewController(vc, animated: true)
+    }
+
     func eventsAvailable(events: [Event]) {
         DispatchQueue.main.async {
             self.tableView.reloadData()
