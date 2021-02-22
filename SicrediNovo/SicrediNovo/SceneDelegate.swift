@@ -21,7 +21,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         let navigation = UINavigationController(rootViewController: InitialScreenViewController.loadFromStoryboard(model: InitialScreenViewModelImpl( networkRequest: EventsNetworkRequestsImpl())))
         window?.rootViewController = navigation    // In ViewController.swift
-        window?.rootViewController?.view.backgroundColor = .yellow  // So we can see it
         window?.makeKeyAndVisible()
     }
 

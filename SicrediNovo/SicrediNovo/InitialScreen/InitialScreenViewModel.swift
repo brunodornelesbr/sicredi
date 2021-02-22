@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol InitialScreenViewModelDelegate {
+protocol InitialScreenViewModelDelegate: class {
     func eventsAvailable(events: [Event])
     func showError(error: Error)
 }
@@ -21,7 +21,7 @@ protocol InitialScreenViewModel {
 }
 
 class InitialScreenViewModelImpl: InitialScreenViewModel {
-    public var initialScreenDelegate: InitialScreenViewModelDelegate?
+    public weak var initialScreenDelegate: InitialScreenViewModelDelegate?
     private var networkRequest: EventsNetworkRequests!
     private var events: [Event] = []
 
