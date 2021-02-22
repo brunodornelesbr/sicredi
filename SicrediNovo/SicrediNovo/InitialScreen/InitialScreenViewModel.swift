@@ -10,6 +10,7 @@ import UIKit
 protocol InitialScreenViewModelDelegate: class {
     func eventsAvailable(events: [Event])
     func showError(error: Error)
+    func pushViewController(vc: UIViewController)
 }
 
 protocol InitialScreenViewModel {
@@ -43,7 +44,7 @@ class InitialScreenViewModelImpl: InitialScreenViewModel {
     }
 
     public func didSelect(row: Int) {
-
+        
     }
 
     private func requestEvents() {
