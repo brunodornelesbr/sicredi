@@ -9,6 +9,8 @@ import UIKit
 
 protocol EventsNetworkRequests {
     func requestEvents(completionHandler: @escaping ([Event], Error?)->())
+    func requestSingleEventInformation(eventId: String, completionHandler: @escaping (Event?, Error?)->())
+    func postCheckInInformation(checkInformation: CheckInInformation, completionHandler: @escaping (Bool, Error?)->())
 }
 
 
@@ -36,6 +38,33 @@ struct EventsNetworkRequestsImpl: EventsNetworkRequests {
             }
             completionHandler(eventList, nil)
         }
+    }
+
+    func requestSingleEventInformation(eventId: String,completionHandler: @escaping (Event?, Error?) -> ()) {
+        let moreInfoString = String(format:APIConstants.eventDetail, eventId)
+
+        guard let moreInfoURL = URL(string: moreInfoString) else {
+            completionHandler(nil, NetworkError.networkError)
+            return
+        }
+
+        network.requestGetList(url: moreInfoURL) {data, error in
+            guard error == nil else {
+                completionHandler(nil, error)
+                return
+            }
+
+            guard let data = data, let event = try? JSONDecoder().decode(Event.self, from: data) else {
+                completionHandler(nil, NetworkError.noData)
+                return
+            }
+
+            completionHandler(event, nil)
+        }
+    }
+
+    func postCheckInInformation(checkInformation: CheckInInformation, completionHandler: @escaping (Bool, Error?)->()) {
+        
     }
 
 }
