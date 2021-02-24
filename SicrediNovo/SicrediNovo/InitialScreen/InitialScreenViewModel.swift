@@ -44,7 +44,12 @@ class InitialScreenViewModelImpl: InitialScreenViewModel {
     }
 
     public func didSelect(row: Int) {
-        
+        guard let event = eventFor(row: row) else {
+            return
+        }
+        let detailsModel = DetailScreenViewModelImpl(networkRequest: EventsNetworkRequestsImpl(), eventId: event.id)
+        let vc = DetailScreenViewController.loadFromStoryboard(model: detailsModel)
+        initialScreenDelegate?.pushViewController(vc: vc)
     }
 
     private func requestEvents() {

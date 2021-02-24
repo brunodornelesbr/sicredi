@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9AAF99E925E67CA600844125 /* DetailScreenViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAF99E825E67CA600844125 /* DetailScreenViewControllerTests.swift */; };
+		9AAF99EE25E67D5500844125 /* DetailScreenViewModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAF99ED25E67D5500844125 /* DetailScreenViewModelStub.swift */; };
 		9AC1C6D725E3D737007A47C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C6D625E3D737007A47C2 /* AppDelegate.swift */; };
 		9AC1C6D925E3D737007A47C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C6D825E3D737007A47C2 /* SceneDelegate.swift */; };
 		9AC1C6E025E3D738007A47C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AC1C6DF25E3D738007A47C2 /* Assets.xcassets */; };
@@ -26,6 +28,15 @@
 		9AC1C77425E40BBA007A47C2 /* InitialScreenViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C77325E40BBA007A47C2 /* InitialScreenViewModelTests.swift */; };
 		9AC1C77925E40C66007A47C2 /* InitialScreenViewModelDelegateStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C77825E40C66007A47C2 /* InitialScreenViewModelDelegateStub.swift */; };
 		9AC1C78125E40CDF007A47C2 /* EventsNetworkStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C78025E40CDF007A47C2 /* EventsNetworkStub.swift */; };
+		9AC1C78E25E42648007A47C2 /* DetailScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C78D25E42648007A47C2 /* DetailScreenViewController.swift */; };
+		9AC1C79625E426EC007A47C2 /* DetailScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C79525E426EC007A47C2 /* DetailScreenViewModel.swift */; };
+		9AC1C7A825E42DB5007A47C2 /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C7A025E42DB5007A47C2 /* OptionsTableViewCell.swift */; };
+		9AC1C7A925E42DB5007A47C2 /* ImageViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C7A125E42DB5007A47C2 /* ImageViewTableViewCell.swift */; };
+		9AC1C7AC25E42DB5007A47C2 /* ImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AC1C7A425E42DB5007A47C2 /* ImageViewCell.xib */; };
+		9AC1C7AD25E42DB5007A47C2 /* OptionsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AC1C7A525E42DB5007A47C2 /* OptionsViewCell.xib */; };
+		9AC1C7FD25E52F76007A47C2 /* CheckInInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1C7FC25E52F76007A47C2 /* CheckInInformation.swift */; };
+		9AEA7A4E25E686C100886256 /* DetailScreenViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEA7A4D25E686C100886256 /* DetailScreenViewModelTests.swift */; };
+		9AEA7A5325E6872600886256 /* DetailScreenViewModelDelegateStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEA7A5225E6872600886256 /* DetailScreenViewModelDelegateStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9AAF99E825E67CA600844125 /* DetailScreenViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenViewControllerTests.swift; sourceTree = "<group>"; };
+		9AAF99ED25E67D5500844125 /* DetailScreenViewModelStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenViewModelStub.swift; sourceTree = "<group>"; };
 		9AC1C6D325E3D737007A47C2 /* SicrediNovo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SicrediNovo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AC1C6D625E3D737007A47C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AC1C6D825E3D737007A47C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +84,15 @@
 		9AC1C77325E40BBA007A47C2 /* InitialScreenViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenViewModelTests.swift; sourceTree = "<group>"; };
 		9AC1C77825E40C66007A47C2 /* InitialScreenViewModelDelegateStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenViewModelDelegateStub.swift; sourceTree = "<group>"; };
 		9AC1C78025E40CDF007A47C2 /* EventsNetworkStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsNetworkStub.swift; sourceTree = "<group>"; };
+		9AC1C78D25E42648007A47C2 /* DetailScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenViewController.swift; sourceTree = "<group>"; };
+		9AC1C79525E426EC007A47C2 /* DetailScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenViewModel.swift; sourceTree = "<group>"; };
+		9AC1C7A025E42DB5007A47C2 /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
+		9AC1C7A125E42DB5007A47C2 /* ImageViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewTableViewCell.swift; sourceTree = "<group>"; };
+		9AC1C7A425E42DB5007A47C2 /* ImageViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageViewCell.xib; sourceTree = "<group>"; };
+		9AC1C7A525E42DB5007A47C2 /* OptionsViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionsViewCell.xib; sourceTree = "<group>"; };
+		9AC1C7FC25E52F76007A47C2 /* CheckInInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInInformation.swift; sourceTree = "<group>"; };
+		9AEA7A4D25E686C100886256 /* DetailScreenViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenViewModelTests.swift; sourceTree = "<group>"; };
+		9AEA7A5225E6872600886256 /* DetailScreenViewModelDelegateStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenViewModelDelegateStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +145,8 @@
 			children = (
 				9AC1C72E25E3DEF5007A47C2 /* Network */,
 				9AC1C72025E3DAB2007A47C2 /* Model */,
+				9AC1C78C25E42556007A47C2 /* DetailScreen */,
 				9AC1C71525E3D860007A47C2 /* InitialScreen */,
-				9AC1C74225E3EC1B007A47C2 /* Cells */,
 				9AC1C70C25E3D807007A47C2 /* Main.storyboard */,
 				9AC1C6D625E3D737007A47C2 /* AppDelegate.swift */,
 				9AC1C6D825E3D737007A47C2 /* SceneDelegate.swift */,
@@ -141,6 +163,8 @@
 				9AC1C76425E40075007A47C2 /* Stubs */,
 				9AC1C75F25E40007007A47C2 /* InitialViewControllerTests.swift */,
 				9AC1C77325E40BBA007A47C2 /* InitialScreenViewModelTests.swift */,
+				9AAF99E825E67CA600844125 /* DetailScreenViewControllerTests.swift */,
+				9AEA7A4D25E686C100886256 /* DetailScreenViewModelTests.swift */,
 				9AC1C6EF25E3D738007A47C2 /* Info.plist */,
 			);
 			path = SicrediNovoTests;
@@ -158,6 +182,7 @@
 		9AC1C71525E3D860007A47C2 /* InitialScreen */ = {
 			isa = PBXGroup;
 			children = (
+				9AC1C74225E3EC1B007A47C2 /* Cells */,
 				9AC1C71625E3D87D007A47C2 /* InitialScreenViewController.swift */,
 				9AC1C71B25E3D9F5007A47C2 /* InitialScreenViewModel.swift */,
 			);
@@ -168,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				9AC1C72125E3DAD3007A47C2 /* Event.swift */,
+				9AC1C7FC25E52F76007A47C2 /* CheckInInformation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,8 +223,31 @@
 				9AC1C76525E4008D007A47C2 /* InitialScreenViewModelStub.swift */,
 				9AC1C77825E40C66007A47C2 /* InitialScreenViewModelDelegateStub.swift */,
 				9AC1C78025E40CDF007A47C2 /* EventsNetworkStub.swift */,
+				9AAF99ED25E67D5500844125 /* DetailScreenViewModelStub.swift */,
+				9AEA7A5225E6872600886256 /* DetailScreenViewModelDelegateStub.swift */,
 			);
 			path = Stubs;
+			sourceTree = "<group>";
+		};
+		9AC1C78C25E42556007A47C2 /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9AC1C79D25E42DB5007A47C2 /* Cells */,
+				9AC1C78D25E42648007A47C2 /* DetailScreenViewController.swift */,
+				9AC1C79525E426EC007A47C2 /* DetailScreenViewModel.swift */,
+			);
+			path = DetailScreen;
+			sourceTree = "<group>";
+		};
+		9AC1C79D25E42DB5007A47C2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9AC1C7A025E42DB5007A47C2 /* OptionsTableViewCell.swift */,
+				9AC1C7A125E42DB5007A47C2 /* ImageViewTableViewCell.swift */,
+				9AC1C7A425E42DB5007A47C2 /* ImageViewCell.xib */,
+				9AC1C7A525E42DB5007A47C2 /* OptionsViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +356,8 @@
 				9AC1C70E25E3D807007A47C2 /* Main.storyboard in Resources */,
 				9AC1C6E325E3D738007A47C2 /* LaunchScreen.storyboard in Resources */,
 				9AC1C74F25E3EC1C007A47C2 /* MainEventCell.xib in Resources */,
+				9AC1C7AD25E42DB5007A47C2 /* OptionsViewCell.xib in Resources */,
+				9AC1C7AC25E42DB5007A47C2 /* ImageViewCell.xib in Resources */,
 				9AC1C6E025E3D738007A47C2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,10 +383,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AC1C7A825E42DB5007A47C2 /* OptionsTableViewCell.swift in Sources */,
+				9AC1C79625E426EC007A47C2 /* DetailScreenViewModel.swift in Sources */,
+				9AC1C78E25E42648007A47C2 /* DetailScreenViewController.swift in Sources */,
 				9AC1C6D725E3D737007A47C2 /* AppDelegate.swift in Sources */,
 				9AC1C71C25E3D9F5007A47C2 /* InitialScreenViewModel.swift in Sources */,
 				9AC1C73B25E3E639007A47C2 /* APConstants.swift in Sources */,
+				9AC1C7A925E42DB5007A47C2 /* ImageViewTableViewCell.swift in Sources */,
 				9AC1C74B25E3EC1C007A47C2 /* MainEventTableViewCell.swift in Sources */,
+				9AC1C7FD25E52F76007A47C2 /* CheckInInformation.swift in Sources */,
 				9AC1C73025E3DF16007A47C2 /* Network.swift in Sources */,
 				9AC1C71725E3D87D007A47C2 /* InitialScreenViewController.swift in Sources */,
 				9AC1C6D925E3D737007A47C2 /* SceneDelegate.swift in Sources */,
@@ -349,6 +405,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AC1C77425E40BBA007A47C2 /* InitialScreenViewModelTests.swift in Sources */,
+				9AAF99EE25E67D5500844125 /* DetailScreenViewModelStub.swift in Sources */,
+				9AEA7A4E25E686C100886256 /* DetailScreenViewModelTests.swift in Sources */,
+				9AAF99E925E67CA600844125 /* DetailScreenViewControllerTests.swift in Sources */,
+				9AEA7A5325E6872600886256 /* DetailScreenViewModelDelegateStub.swift in Sources */,
 				9AC1C78125E40CDF007A47C2 /* EventsNetworkStub.swift in Sources */,
 				9AC1C76625E4008D007A47C2 /* InitialScreenViewModelStub.swift in Sources */,
 				9AC1C77925E40C66007A47C2 /* InitialScreenViewModelDelegateStub.swift in Sources */,
