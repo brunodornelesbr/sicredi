@@ -17,12 +17,10 @@ class OptionsTableViewCell: UITableViewCell {
     @IBOutlet private weak var mapView: MKMapView!
 
     public var commentButtonDidTouch: ()->() = {}
-    public var addressButtonDidTouch: ()->() = {}
 
     override func awakeFromNib() {
         super.awakeFromNib()
         commentButton.addTarget(self, action: #selector(didTouchComment), for: .touchUpInside)
-        addressButton.addTarget(self, action: #selector(didTouchAddress), for: .touchUpInside)
     }
 
     @objc
@@ -30,11 +28,6 @@ class OptionsTableViewCell: UITableViewCell {
         commentButtonDidTouch()
     }
 
-    @objc
-    private func didTouchAddress() {
-        addressButtonDidTouch()
-    }
-    
     func setup(event: Event) {
         let initialLocation = CLLocation(latitude: Double(event.latitude), longitude: Double(event.longitude))
         let annotation = MKPointAnnotation()

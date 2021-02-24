@@ -13,7 +13,6 @@ protocol DetailsScreenDelegate: class {
 }
 protocol DetailsScreenViewModel {
     func viewDidFinishLoading()
-    func checkInWith(email: String, name: String)
     func didTouchShareAction()
     var detailsDelegate: DetailsScreenDelegate? {get set}
 }
@@ -33,9 +32,6 @@ class DetailScreenViewModelImpl: DetailsScreenViewModel {
 
     func viewDidFinishLoading() {
         requestDetails()
-    }
-
-    public func checkInWith(email: String, name: String) {
     }
 
     public func didTouchShareAction() {

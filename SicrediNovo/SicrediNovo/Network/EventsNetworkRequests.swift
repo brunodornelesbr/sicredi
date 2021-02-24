@@ -10,7 +10,6 @@ import UIKit
 protocol EventsNetworkRequests {
     func requestEvents(completionHandler: @escaping ([Event], Error?)->())
     func requestSingleEventInformation(eventId: String, completionHandler: @escaping (Event?, Error?)->())
-    func postCheckInInformation(checkInformation: CheckInInformation, completionHandler: @escaping (Bool, Error?)->())
 }
 
 
@@ -62,9 +61,4 @@ struct EventsNetworkRequestsImpl: EventsNetworkRequests {
             completionHandler(event, nil)
         }
     }
-
-    func postCheckInInformation(checkInformation: CheckInInformation, completionHandler: @escaping (Bool, Error?)->()) {
-        
-    }
-
 }

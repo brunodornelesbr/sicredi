@@ -40,28 +40,6 @@ class DetailScreenViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
     }
-
-    private func showCheckIn() {
-        let alert = UIAlertController(title: "CHECK-IN", message: "Precisamos do seu nome e email para fazer checkin", preferredStyle: .alert)
-
-        alert.addTextField { (textField) in
-            textField.placeholder = "Nome"
-        }
-        alert.addTextField { (textField) in
-            textField.placeholder = "Email"
-        }
-
-        alert.addAction(UIAlertAction(title: "Checkin", style: .default, handler: { [weak self] _ in
-            guard let textFields = alert.textFields, let nameField = textFields[safe: 0], let emailField = textFields[safe: 1], let email = emailField.text, let name = nameField.text else {
-                return
-            }
-            self?.viewModel.checkInWith(email: email, name: name)
-        }))
-
-        DispatchQueue.main.async {
-            self.present(alert, animated: true, completion: nil)
-        }
-    }
 }
 
 extension DetailScreenViewController: DetailsScreenDelegate {
